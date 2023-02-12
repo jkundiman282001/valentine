@@ -1,7 +1,7 @@
 <html>
-    <body style="background: linear-gradient(to right, red, lightpink), url('./flowers-background.png') no-repeat center; background-size: cover;">
+    <body style="background: linear-gradient(to right, red, lightpink), url('https://png.pngtree.com/png-vector/20210326/ourmid/pngtree-heart-red-glass-gemstone-3d-png-image_3111816.png') no-repeat center; background-size: cover;">
         <div>
-            <h1 style="font-family: 'Courier New', Courier, monospace; font-size: 36px; text-shadow: 2px 2px #ccc;">Will you be my valentine?</h1>
+            <h1 style="font-family: 'Courier New', Courier, monospace; font-size: 36px; text-shadow: 2px 2px #ccc;">Will you be my Valentines?</h1>
             <button id="yesButton" style="font-family: 'Arial', sans-serif; font-size: 24px; padding: 10px 20px; background-color: green; color: white; border-radius: 10px; box-shadow: 2px 2px #ccc;">Yes</button>
             <button id="noButton" style="font-family: 'Arial', sans-serif; font-size: 24px; padding: 10px 20px; background-color: red; color: white; border-radius: 10px; box-shadow: 2px 2px #ccc;">No</button>
         </div>
@@ -9,6 +9,9 @@
             div{
                 text-align: center;
                 vertical-align: middle;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
             }
             #noButton{
                 position: absolute;
@@ -20,7 +23,7 @@
             });
             var noButton = document.getElementById("noButton");
             noButton.addEventListener("click", function(){
-                var questions = ["Why Not?", "Is there someone else?", "Can we still be friends?", "What did I do wrong?", "Can I change your mind?"];
+                var questions = ["Sure ka?", "Ay dli ko musugot", "Ay di jud", "Pagtarong ba", "Pislita nang yes", "Gahig ulo ay", "Sige na baaa", "Ka choosy oy", "Sayon ra kaayo pisliton ang yes", "PAGDALI", "Mam dli", "Unsa man jud imong gusto", "Mam yes na", "Sige na, Uwuuu", "Di jud bya ni muundang", "Ga kapoy.x raka"];
                 var randomQuestion = questions[Math.floor(Math.random() * questions.length)];
                 var i = Math.floor(Math.random()*(window.innerWidth - noButton.offsetWidth)) + "px";
                 var j = Math.floor(Math.random()*(window.innerHeight - noButton.offsetHeight)) + "px";
